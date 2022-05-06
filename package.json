@@ -1,0 +1,28 @@
+{
+  "name": "luke_mccabe_web_dev_coursework2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukeMcCabe1403/Luke_McCabe_WebDev_Coursework2.git"
+  },
+  "author": "Luke McCabe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LukeMcCabe1403/Luke_McCabe_WebDev_Coursework2/issues"
+  },
+  "homepage": "https://github.com/LukeMcCabe1403/Luke_McCabe_WebDev_Coursework2#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mustache-express": "^1.3.2",
+    "nedb": "^1.8.0"
+  }
+}

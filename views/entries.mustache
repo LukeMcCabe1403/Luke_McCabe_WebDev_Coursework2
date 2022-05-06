@@ -1,0 +1,67 @@
+<html>
+<head>
+    {{>header}}
+</head>
+<body>
+<div class="">
+  <a href="/about" class="btn btn-primary">
+    About Us
+  </a>
+  {{^user}}
+<a id="register" href="/register" class="btn btn-primary">
+Register
+</a>
+<a id="login" href="/login" class="btn btn-primary">
+Sign in
+</a>
+<a id="login" href="/dinner" class="btn btn-primary">
+Dinner Menu Items
+</a>
+<a id="login" href="/lunch" class="btn btn-primary">
+Lunch Menu Items
+</a>
+{{/user}}
+{{#user}}
+<a id="logout" href="/logout" class="btn btn-primary">
+Sign out
+</a>
+<a href="/new" class="btn btn-primary">
+    Create New Dish
+</a>
+<a id="login" href="/dinner" class="btn btn-primary">
+New Dinner Menu Items
+</a>
+<a id="login" href="/lunch" class="btn btn-primary">
+New Lunch Menu Items
+</a>
+{{/user}}
+</div>
+    <h1>{{title}}</h1>
+    {{#entries}}
+    <div >
+        <div>
+            <h4><a href="/posts/{{name}}">{{name}}</a></h4>
+            <p>
+                {{ingredients}}
+            </p>
+            <p>
+                {{allergyAdvice}}
+            </p>
+            <p>
+                {{price}}
+            </p>
+            <p>
+                {{menu}}
+            </p>
+        <div class="card-footer">
+            <p>Dish can be found on <a href="/posts/{{menu}}">{{menu}}</a></p>
+        </div> 
+    </div>
+    <hr>
+    {{/entries}}
+    {{^entries}}
+         no entries yet.
+    {{/entries}}
+</body>
+</html>
+    

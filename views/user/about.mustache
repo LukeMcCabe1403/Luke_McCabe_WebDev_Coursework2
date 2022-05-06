@@ -1,0 +1,42 @@
+<head>
+    {{>header}}
+</head>
+
+<div class="" style="margin-bottom: 1em;">
+{{^user}}
+  <a id="login" href="/login" class="btn btn-primary">
+    Sign in
+  </a>
+  <a id="login" href="/register" class="btn btn-primary">
+    Register
+  </a>
+  <a id="login" href="/about" class="btn btn-primary">
+    About Us
+  </a>
+  <a id="login" href="/" class="btn btn-primary">
+    All Dishes
+  </a>
+{{/user}}
+{{#user}}
+  <a id="logout" href="/logout" class="btn btn-primary">
+    Sign out
+  </a>
+{{/user}}
+</div>
+<div>
+<html>
+    <head>
+        <title> About</title>
+    </head>
+    <body>
+        <h1> About us</h1>
+<p>     Welcome to our site. We're dedicated to giving you the very best experience with a focus on dependability, customer service and uniqueness.</p>  
+ <p>     We have multiple fantastic menus for you top browse before eating in our establishment.</p>
+          
+       <p> We hope you enjoy our site. If you have any questions or comments, please don't hesitate to contact us.</p>
+
+
+    </body>
+</html>
+</body>
+</div>
